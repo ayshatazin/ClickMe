@@ -26,7 +26,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 clickCounter++;
-                tvClick.setText("You clicked Me " + clickCounter + " times");
+                if(clickCounter==10)
+                {
+                    tvClick.setText("Level 1 Complete! Your Score" +clickCounter);
+                }
+                else if(clickCounter==20)
+                {
+                    tvClick.setText("Level 2 Complete! Your Score" +clickCounter);
+                }
+                else if(clickCounter==30)
+                {
+                    tvClick.setText("Level 3 Complete! Your Score" +clickCounter);
+                }
             }
         });
     }
